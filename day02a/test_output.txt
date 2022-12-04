@@ -1,0 +1,7 @@
+opponent: A     mine: Y
+win
+opponent: B     mine: X
+loss
+opponent: C     mine: Z
+draw
+15

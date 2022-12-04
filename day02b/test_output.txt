@@ -1,0 +1,7 @@
+opponent: A     mine: X
+draw
+opponent: B     mine: X
+loss
+opponent: C     mine: X
+win
+12
