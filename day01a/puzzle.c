@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <stdlib.h>
+#include "../base_types.h"
+
+int main(int argc, char *argv[]){
+    i32 calories_biggest = 0;
+    i32 calories_current = 0;
+    
+    // read in the file
+    char filename[64];
+    sscanf(argv[1], "%s", filename);
+    FILE* fd;
+    fd = fopen(filename, "r");
+    assert(fd != NULL);
+    
+    // 
+    char line_raw[30];
+    char* fgets_status;
+    fgets_status = fgets(line_raw, sizeof(line_raw), fd);
+    
+    while (fgets_status != NULL){
+        if (line_raw[0] == '\n'){
+            // new elf
+            calories_current = 0;
+        }
+        else{
+            calories_current += atoi(line_raw);
+            
+            if (calories_current > calories_biggest){
+                calories_biggest = calories_current;
+            }
+        }
+        
+        fgets_status = fgets(line_raw, sizeof(line_raw), fd);
+        
+    }
+    
+    
+    fclose(fd);
+    
+    printf("%d\n",calories_biggest); 
+    
+    return 0;
+}
