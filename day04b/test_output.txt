@@ -1,0 +1,9 @@
+line 5-7,7-9
+ has an overlap
+line 2-8,3-7
+ has an overlap
+line 6-6,4-6
+ has an overlap
+line 2-6,4-8
+ has an overlap
+4
