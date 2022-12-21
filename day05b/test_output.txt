@@ -1,0 +1,15 @@
+last line got:  1   2   3 
+
+looking in line [Z] [M] [P]
+
+need to place 'Z' at 0
+need to place 'M' at 1
+need to place 'P' at 2
+looking in line [N] [C]    
+
+need to place 'N' at 0
+need to place 'C' at 1
+looking in line     [D]    
+
+need to place 'D' at 1
+MCD
