@@ -1,0 +1,17 @@
+detected directory 'a
+' 
+detected file 'b.txt' with size 14848514
+detected file 'c.dat' with size 8504156
+detected directory 'd
+' 
+detected directory 'e
+' 
+detected file 'f' with size 29116
+detected file 'g' with size 2557
+detected file 'h.lst' with size 62596
+detected file 'i' with size 584
+detected file 'j' with size 4060174
+detected file 'd.log' with size 8033020
+detected file 'd.ext' with size 5626152
+detected file 'k' with size 7214296
+95437

@@ -43,6 +43,23 @@ extern "C" {
 #define TIME_NS_TO_MS(x)  ((x) / 1000000)
 #define TIME_NS_TO_US(x)  ((x) / 1000)
     
+#define STRING8_DIFFERENT 0
+#define STRING8_SAME 1
+    
+    u8 string8_compare(string8 a, string8 b){
+        // string comparison function
+        // TODO horribly inefficient because it does one byte at a time
+        if (a.size != b.size){
+            return STRING8_DIFFERENT;
+        }
+        for (u64 i=0; i<a.size; ++i){
+            if (a.str[i] != b.str[i]){
+                return STRING8_DIFFERENT;
+            }
+        }
+        return STRING8_SAME;
+    }
+    
 #ifdef __cplusplus
 }
 #endif
