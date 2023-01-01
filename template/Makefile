@@ -1,4 +1,4 @@
-COMMON=-O2 -std=c99 -mavx -pthread -Wall -pedantic -g
+COMMON=-O0 -std=c99 -mavx -pthread -Wall -pedantic -g
 
 all: test
 
